@@ -22,7 +22,7 @@ public class BlogPostBatch {
     private String content;
 
     @OneToMany(mappedBy = "blogPost")
-    @BatchSize(size = 10)
+    @BatchSize(size = 3)
     private List<CommentBatch> comments = new ArrayList<>();
 
 }
