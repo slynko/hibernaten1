@@ -24,7 +24,6 @@ public class BlogPostEntityGraph {
     private String content;
 
     @OneToMany(mappedBy = "blogPost")
-    @BatchSize(size = 10)
     private List<CommentBatch> comments = new ArrayList<>();
 
 }
